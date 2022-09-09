@@ -1,37 +1,35 @@
 #include <stdio.h>
 
 /**
-* main - entry point
-*
-* Return: always 0
-*/
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+
 int main(void)
 {
-	int digits1;
-	int number1;
-	int digits2;
-	int number2;
+	int n;
+	int m;
 
-	for (digits1 = 0; digits1 < 10; digits1++)
+	for (n = 48; n <= 57; n++)
 	{
-		number1 = ((digits1 % 10) + '0');
-
-		for (digits2 = 0; digits2 < 10; digits2++)
+		for (m = 48; m <= 57; m++)
 		{
-			number2 = ((digits2 % 10) + '0');
-
-			putchar(number1);
-			putchar(number2);
-
-			if (number1 == 9 && number2 == 9)
-				continue;
-
-			putchar(',');
-			putchar(' ');
+			if (m > n)
+			{
+				putchar (n);
+				putchar (m);
+				if (m == 57 && n == 56)
+				{
+					putchar (10);
+				}
+				else
+				{
+					putchar (44);
+					putchar (32);
+				}
+			}
 		}
 	}
-
-	putchar('\n');
-
 	return (0);
 }
