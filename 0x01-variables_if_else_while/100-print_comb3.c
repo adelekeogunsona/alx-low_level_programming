@@ -20,17 +20,14 @@ int main(void)
 		{
 			number2 = ((digits2 % 10) + '0');
 
-			if (number1 != number2)
-			{
-				putchar(number1);
-				putchar(number2);
+			putchar(number1);
+			putchar(number2);
 
-				if (number1 != 9 && number2 != 8)
-				{
-					putchar(',');
-					putchar(' ');
-				}
-			}
+			if (number1 == 9 && number2 == 9)
+				continue;
+
+			putchar(',');
+			putchar(' ');
 		}
 	}
 
