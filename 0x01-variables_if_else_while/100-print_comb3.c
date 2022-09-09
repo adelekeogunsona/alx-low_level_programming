@@ -1,35 +1,40 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
-
+* main - Entry point
+*
+* Return: Always 0
+*/
 int main(void)
 {
-	int n;
-	int m;
+	int a;
+	int a1;
+	int b;
+	int b1;
 
-	for (n = 48; n <= 57; n++)
+	for (a = 0; a < 10; a++)
 	{
-		for (m = 48; m <= 57; m++)
+		a1 = ((a % 10) + '0');
+
+		for (b = 0; b < 10; b++)
 		{
-			if (m > n)
+			b1 = ((b % 10) + '0');
+
+			if (a != b && a < b)
 			{
-				putchar (n);
-				putchar (m);
-				if (m == 57 && n == 56)
+				putchar(a1);
+				putchar(b1);
+
+				if ()
 				{
-					putchar (10);
-				}
-				else
-				{
-					putchar (44);
-					putchar (32);
+					putchar(',');
+					putchar(' ');
 				}
 			}
 		}
 	}
+
+	putchar('\n');
+
 	return (0);
 }
