@@ -8,9 +8,13 @@
 int main(void)
 {
 	int digits;
+	int number;
 
 	for (digits = 0; digits < 10; digits++)
-		putchar(digits);
+	{
+		number = (digits % 10) + '0';
+		putchar(number);
+	}
 
 	putchar('\n');
 
