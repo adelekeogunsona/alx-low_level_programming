@@ -12,5 +12,5 @@ int _abs(int n)
 
 	absolute = (n * n) / n;
 
-	return (n);
+	return (absolute);
 }
