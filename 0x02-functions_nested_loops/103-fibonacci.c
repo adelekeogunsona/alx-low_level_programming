@@ -14,9 +14,9 @@ int main(void)
 		a += b;
 
 		if ((b % 2) == 0)
-			c += k;
+			c += b;
 
-		b = a - j;
+		b = a - b;
 	}
 
 	printf("$ld\n", c);
