@@ -5,7 +5,7 @@
 *
 * Return: always zero
 */
-int main(void)
+void print_alphabet(void);
 {
 	char letters;
 
