@@ -10,7 +10,7 @@ int _abs(int n)
 {
 	int absolute;
 
-	absolute = (n * n) / n;
+	absolute = (n ** 2) / n;
 
 	return (absolute);
 }
