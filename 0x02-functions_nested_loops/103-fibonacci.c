@@ -19,7 +19,7 @@ int main(void)
 		b = a - b;
 	}
 
-	printf("$ld\n", c);
+	printf("%ld\n", c);
 
 	return (0);
 }
