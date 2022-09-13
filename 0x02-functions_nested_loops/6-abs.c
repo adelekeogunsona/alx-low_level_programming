@@ -4,13 +4,12 @@
 * _abs - Function that computes the absoulte value of an integer
 * @n: Number to be checked
 *
-* Return: Always 0
+* Return: Absolute value of n
 */
 int _abs(int n)
 {
-	int absolute;
-
-	absolute = (n ** 2) / n;
-
-	return (absolute);
+	if (n <= 0)
+		return (-n);
+	else
+		return (n);
 }
