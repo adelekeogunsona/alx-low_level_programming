@@ -9,7 +9,7 @@ int main(void)
 {
 	char putchar;
 
-	_purchar("_putchar");
+	_purchar("a");
 
 	return (0);
 }
