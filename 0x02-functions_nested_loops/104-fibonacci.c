@@ -23,7 +23,7 @@ int main(void)
 
 		printf("%ld", c);
 
-		if (i < 98)
+		if (i < 95)
 			printf(", ");
 		else
 			printf("\n");
