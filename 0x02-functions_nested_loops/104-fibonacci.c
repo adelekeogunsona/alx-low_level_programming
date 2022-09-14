@@ -1,33 +1,26 @@
 #include <stdio.h>
 
 /**
-* main - Entry point
+* main - main block
 *
-* Return: Always zero
+* Return: 0
 */
 int main(void)
 {
-	long a = 1;
-	long b = 2;
-	int i;
-	long c;
+	int i = 0;
+	unsigned long int a = 0, b = 1, next = 0;
 
-	printf("%ld, ", a);
-	printf("%ld, ", b);
-
-	for (i = 3; i <= 98; i++)
+	while (i < 98)
 	{
-		c = a + b;
+		next = a + b;
 		a = b;
-		b = c;
+		b = next;
+		printf("%lu", next);
 
-		printf("%ld", c);
-
-		if (i < 98)
+		if (i < 97)
 			printf(", ");
-		else
-			printf("\n");
+		i++;
 	}
-
+	putchar('\n');
 	return (0);
 }
