@@ -1,11 +1,10 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
-* print_numbers - Prints the numbers from 0-9
+* print_numbers - Print the number  0-9
 *
-* Return: zero
+* Return: The  number 0-9
 */
-
 void print_numbers(void)
 {
 	int num;
@@ -15,5 +14,6 @@ void print_numbers(void)
 		_putchar(num + '0');
 	}
 
-	_putchar("\n");
+	_putchar('\n');
 }
+
