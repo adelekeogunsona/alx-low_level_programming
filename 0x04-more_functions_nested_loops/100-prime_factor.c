@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
 
 /**
 * main - Entry Point
@@ -9,7 +8,7 @@
 
 int main(void)
 {
-	long long n = 612852475143;
+	long n = 612852475143;
 	int i = 2, largest = 2;
 
 	while (n != 1)
