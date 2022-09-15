@@ -6,13 +6,11 @@
 * @a: First number
 * @b: Second number
 *
-* Return: 0
+* Return: result
 */
 
 int mul(int a, int b)
 {
 	int c = (a * b);
-	printf("%d", c);
-
-	return (0);
+	return (c);
 }
