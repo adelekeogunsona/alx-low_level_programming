@@ -10,10 +10,12 @@
 
 void puts_half(char *str)
 {
-	int count = -1;
+	int total = 0;
 
-	while (str[count] != '\0')
-		count++;
+	while (str[total] != '\0')
+		total++;
+
+	int count = total - 1;
 
 	if ((count % 2) == 0)
 	{
