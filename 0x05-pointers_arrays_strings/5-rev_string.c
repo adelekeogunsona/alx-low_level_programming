@@ -10,20 +10,18 @@
 void rev_string(char *s)
 {
 	int count = -1;
+	int i;
 
 	while (s[count] != '\0')
 	{
 		count++;
 	}
 
-	char holding[count-1];
-	int i;
-
 	for (; count >= 0; count--)
 	{
 		i = 0;
-		char holding[i] = s[count];
+		char reverse[i] = s[count];
 	}
 
-	*s = holding;
+	*s = reverse;
 }
