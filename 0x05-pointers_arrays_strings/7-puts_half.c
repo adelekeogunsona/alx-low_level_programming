@@ -22,15 +22,15 @@ void puts_half(char *str)
 	{
 		int half = count / 2;
 
-		for (; count > half; count--)
-			_putchar(str[count]);
+		for (; half <= count; half++)
+			_putchar(str[half]);
 	}
 	else
 	{
 		int half = (count - 1) / 2;
 
-		for (; count > half; count--)
-			_putchar(str[count]);
+		for (; half <= count; half++)
+			_putchar(str[half]);
 	}
 
 	_putchar('\n');
