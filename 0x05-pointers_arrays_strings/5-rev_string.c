@@ -10,20 +10,20 @@
 
 void rev_string(char *s)
 {
-	int count = -1;
 	int i;
-	char reverse;
+	int count = -1;
+	char reverse = s[0];
 
 	while (s[count] != '\0')
 	{
 		count++;
 	}
 
-	for (; count >= 0; count--)
+	for (i = 0; i < count; i++)
 	{
-		i = 0;
-		strcat(reverse, s[count]);
+		count--;
+		reverse = s[i];
+		s[i] = s[count];
+		s[count] = reverse;
 	}
-
-	*s = reverse;
 }
