@@ -22,7 +22,8 @@ char *_strcpy(char *dest, char *src)
 
 	for (; i <= count; i++)
 	{
-		dest[i] = src[i];
+		if (src)
+			dest[i] = src[i];
 	}
 
 	return (dest);
