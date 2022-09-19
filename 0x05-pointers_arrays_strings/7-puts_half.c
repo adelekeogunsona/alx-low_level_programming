@@ -12,6 +12,7 @@ void puts_half(char *str)
 {
 	int count;
 	int total = 0;
+	int half;
 
 	while (str[total] != '\0')
 		total++;
@@ -20,7 +21,7 @@ void puts_half(char *str)
 
 	if ((count % 2) == 0)
 	{
-		int half = count / 2;
+		half = (count / 2) + 1;
 
 		for (; half <= count; half++)
 			_putchar(str[half]);
@@ -29,7 +30,7 @@ void puts_half(char *str)
 	{
 		int half = (count - 1) / 2;
 
-		for (; half <= count; half++)
+		for (half += 1; half <= count; half++)
 			_putchar(str[half]);
 	}
 
