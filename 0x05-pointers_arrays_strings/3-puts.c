@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
 * _puts - Function that prints to stdout
@@ -10,5 +9,10 @@
 
 void _puts(char *str)
 {
-	printf("%s\n", *str);
+	for (; *str != '\0'; str++)
+	{
+		_putchar(*str);
+	}
+
+	_putchar('\n');
 }
