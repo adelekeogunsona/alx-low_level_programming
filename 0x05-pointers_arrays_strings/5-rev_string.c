@@ -16,14 +16,14 @@ void rev_string(char *s)
 		count++;
 	}
 
-	char reverse[count-1];
+	char holding[count-1];
 	int i;
 
 	for (; count >= 0; count--)
 	{
 		i = 0;
-		char reverse[i] = s[count];
+		char holding[i] = s[count];
 	}
 
-	*s = reverse;
+	*s = holding;
 }
