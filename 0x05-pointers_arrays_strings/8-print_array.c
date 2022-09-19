@@ -23,4 +23,6 @@ void print_array(int *a, int n)
 		if (i < times)
 			printf(", ");
 	}
+
+	printf("\n");
 }
