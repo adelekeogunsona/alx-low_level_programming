@@ -20,13 +20,13 @@ void puts_half(char *str)
 		int half = count / 2;
 
 		for (; count > half; count--)
-			_putchar(*str);
+			_putchar(str[count]);
 	}
 	else
 	{
 		int half = (count - 1) / 2;
 
 		for (; count > half; count--)
-			_putchar(*str);
+			_putchar(str[count]);
 	}
 }
