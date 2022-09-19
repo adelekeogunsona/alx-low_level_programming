@@ -16,7 +16,7 @@ void rev_string(char *s)
 		count++;
 	}
 
-	char reverse[];
+	char reverse[count-1];
 	int i;
 
 	for (; count >= 0; count--)
