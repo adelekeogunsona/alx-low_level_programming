@@ -12,7 +12,7 @@
 char *_strcat(char *dest, char *src)
 {
 	int total1 = 0, total2 = 0, a = 0, b = 0, i = 0;
-	char all[5000];
+	char all[500000];
 
 	while (dest[total1] != '\0')
 	{
