@@ -1,3 +1,15 @@
+#include "main.h"
+#include <stdio.h>
+
+/**
+* _strncat - Concatenates two strings
+* @dest: Destination
+* @src: Source
+* @n: Limit
+*
+* Return: destination
+*/
+
 char *_strncat(char *dest, char *src, int n)
 {
 	int total1 = 0, total2 = 0, a = 0, b = 0, i = 0;
