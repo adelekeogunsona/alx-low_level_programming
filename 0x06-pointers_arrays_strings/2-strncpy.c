@@ -12,32 +12,12 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int total1 = 0, total2 = 0, a = 0, b = 0, i = 0;
-	char all[500000];
+	int a = 0;
 
-	while (dest[total1] != '\0')
+	while (a < n)
 	{
-		total1++;
-	}
-
-	while (total2 < n)
-	{
-		all[a] = src[total2];
-		total2++;
+		dest[a] = src[a];
 		a++;
-	}
-
-	while (all[b] != '\0')
-	{
-		dest[i] = all[b];
-		i++;
-		b++;
-	}
-
-	while (i <= total1)
-	{
-		dest[i] = '*';
-		i++;
 	}
 
 	return (dest);
