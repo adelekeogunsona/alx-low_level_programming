@@ -14,16 +14,18 @@ void reverse_array(int *a, int n)
 	int i = 0, j = 0;
 	int rev[10000];
 
-	while (i < n)
+	while (i <= n)
 	{
 		rev[i] = a[i];
 		i++;
 	}
 
+	n -= 1;
+
 	while (n >= 0)
 	{
-		n--;
 		a[j] = rev[n];
 		j++;
+		n--;
 	}
 }
