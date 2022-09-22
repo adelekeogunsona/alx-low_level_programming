@@ -12,12 +12,11 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int a = 0, b = 0, count = 0;
+	int a = 0, count = 0;
 
-	while (dest[b] != '\0')
+	while (dest[count] != '\0')
 	{
 		count++;
-		b++;
 	}
 
 	while (n >= 0 && a < n && a < count)
