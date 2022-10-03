@@ -5,7 +5,7 @@
  * argstostr - Concatenates all the arguments
  * @ac: Argument count
  * @av: Argument vector
- * 
+ *
  * Return: result or NULL if fail
  */
 
