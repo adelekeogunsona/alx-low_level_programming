@@ -12,11 +12,14 @@ char **strtow(char *str)
 	char **d;
 	int count = 0;
 
-	if (str == NULL || str == "")
+	if (str == NULL)
 		return (NULL);
 
 	while (*str)
 		count++;
+
+	if (count < 1)
+		return (NULL);
 
 	d = malloc(4193);
 	return (d);
