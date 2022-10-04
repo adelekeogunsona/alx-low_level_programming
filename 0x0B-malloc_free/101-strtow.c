@@ -12,6 +12,9 @@ char **strtow(char *str)
 	char **d;
 	int count = 0;
 
+	if (str == NULL || str == "")
+		return (NULL);
+
 	while (*str)
 		count++;
 
