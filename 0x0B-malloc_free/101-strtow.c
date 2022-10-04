@@ -21,6 +21,6 @@ char **strtow(char *str)
 	if (count < 1)
 		return (NULL);
 
-	d = malloc(4193);
+	d = malloc(sizeof(char) * 4193);
 	return (d);
 }
